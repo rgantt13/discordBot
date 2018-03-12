@@ -1,11 +1,13 @@
 // JavaScript source code
-const botconfig = require("./botconfig.json");
+const botconfig = require("../../../BotConfig/botconfig.json");
 const Discord = require("discord.js");
 
 const bot = new Discord.Client({disableEveryone: true});
 
 bot.on("ready", async () => {
+	bot.user.setUsername("TestBot");
 	console.log(`${bot.user.username} is online!`);
+	
 	bot.user.setGame("Fuck you~! :)");
 });
 
