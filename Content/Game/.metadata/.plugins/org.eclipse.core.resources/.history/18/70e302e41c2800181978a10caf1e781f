@@ -1,0 +1,5 @@
+package Combat;
+
+public interface combatUnit {
+
+}

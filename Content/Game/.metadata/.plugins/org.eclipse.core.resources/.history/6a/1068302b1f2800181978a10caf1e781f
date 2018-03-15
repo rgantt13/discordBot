@@ -1,0 +1,6 @@
+package Combat;
+
+public class enemy() extends combatUnit {
+	
+
+}

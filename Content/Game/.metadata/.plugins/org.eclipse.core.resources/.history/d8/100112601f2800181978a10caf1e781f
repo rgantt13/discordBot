@@ -1,0 +1,110 @@
+package Combat;
+
+public class enemy implements combatUnit {
+	private String name;
+	private int maxHp;
+	private int curHp;
+	private int maxDef;
+	private int curDef;
+	private int maxAtt;
+	private int curAtt;
+
+	public enemy(String name, int maxHp, int curHp, int maxDef, int curDef,
+			int maxAtt, int curAtt) {
+		super();
+		this.name = name;
+		this.maxHp = maxHp;
+		this.curHp = curHp;
+		this.maxDef = maxDef;
+		this.curDef = curDef;
+		this.maxAtt = maxAtt;
+		this.curAtt = curAtt;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getMaxHp() {
+		return maxHp;
+	}
+
+	public void setMaxHp(int maxHp) {
+		this.maxHp = maxHp;
+	}
+
+	public int getCurHp() {
+		return curHp;
+	}
+
+	public void setCurHp(int curHp) {
+		this.curHp = curHp;
+	}
+
+	public int getMaxDef() {
+		return maxDef;
+	}
+
+	public void setMaxDef(int maxDef) {
+		this.maxDef = maxDef;
+	}
+
+	public int getCurDef() {
+		return curDef;
+	}
+
+	public void setCurDef(int curDef) {
+		this.curDef = curDef;
+	}
+
+	public int getMaxAtt() {
+		return maxAtt;
+	}
+
+	public void setMaxAtt(int maxAtt) {
+		this.maxAtt = maxAtt;
+	}
+
+	public int getCurAtt() {
+		return curAtt;
+	}
+
+	public void setCurAtt(int curAtt) {
+		this.curAtt = curAtt;
+	}
+
+	
+	
+	
+	
+	
+	public void takeDamage(int dmg) {
+		setCurHp(getCurHp() - dmg);
+		
+	}
+
+	public static void meleeAttack() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public static void incap() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public static void useItem() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public static void heal() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

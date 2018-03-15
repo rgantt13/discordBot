@@ -1,0 +1,28 @@
+package Combat;
+
+public interface combatUnit {
+	
+	public static void takeDamage(){
+		
+	}
+	
+	
+	public static void meleeAttack(){
+		
+	}
+	
+	public static void incap(){
+		
+	}
+	
+	public static void useItem(){
+		
+	}
+	
+	public static void heal(){
+		
+	}
+	
+	
+	
+}
