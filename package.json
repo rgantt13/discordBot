@@ -2,7 +2,7 @@
   "name": "discordbot",
   "version": "1.0.0",
   "description": "discord rpg project",
-  "main": "Content/Bot/index.js",
+  "main": "src/Bot/index.js",
   "scripts": {
     "start": "node ."
   },
