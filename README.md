@@ -8,6 +8,13 @@ When packages are successfully installed, you can run the discord bot with this 
 
 npm start
 
+**Note: You must have the discord botconfig.json within a folder above the parent directory for the project named "Bot Config". This should contain a json blob like the following...
+
+{
+	"token": "unique-identifier-string-provided-by-discord",
+	"prefix": "!"
+}
+
 ###Resources
 
 https://discordjs.guide/
