@@ -10,5 +10,7 @@ npm start
 
 ###Resources
 
+https://discordjs.guide/
+
 Troubleshooting access/permissions:
 https://stackoverflow.com/questions/73036854/message-content-doesnt-have-any-value-in-discord-js
