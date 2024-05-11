@@ -20,7 +20,7 @@ bot.on(Discord.Events.MessageCreate, message => {
 	if(message.author.bot) return;
 	if(message.channel.type === "dm") return;
 
-	let prefix = botconfig.prefix;
+	const prefix = botconfig.prefix;
 	let messageArray = message.content.split(" ");
 	let cmd = messageArray[0];
 	let args = messageArray.slice(1);
@@ -39,6 +39,18 @@ bot.on(Discord.Events.MessageCreate, message => {
 		return message.channel.send("So far I have set up the ability to say 'Hello!'");
 	}
 
+	if(cmd === `${prefix}time`){
+		const date = new Date();
+		return message.channel.send(Discord.time(date, Discord.TimestampStyles.LongDateTime));
+	}
+
+	if(cmd === `${prefix}notifyIn30s`){
+		console.log("Notify in 30s")
+		setTimeout(() => {
+			console.log("Finished waiting 30s");
+			message.channel.send("30 second notification!");
+		}, 30000);
+	}
 })
 
 
@@ -66,7 +78,13 @@ bot.on("message", message => {
 		return message.channel.send("So far I have set up the ability to say 'Hello!'");
 	}
 
+	if(cmd === `${prefix}time`){
+		console.log("Request Time in message!")
+		const date = new Date();
+		return Discord.time(date, Discord.TimestampStyles.RelativeTime);
+	}
 });
 
 
 bot.login(botconfig.token);
+
